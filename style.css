@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pinterest-card {
+    position: relative;
+    height: 400px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25vh;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.8s;
+}
+
+.gradient {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    background-image: linear-gradient(360deg, rgba(0,0,0,0.6083026960784313) 0%, rgba(0,0,0,0.2) 21%, rgba(255,255,255,0) 100%);
+}
+
+.save-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 60px;
+    width: 90px;
+    background-color: red;
+    border-radius: 40px;
+    margin-top: 12px;
+    margin-right: 12px;
+    color: white;
+    line-height: 60px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14pt;
+    transform: translateY(-70px);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.6s;
+}
+
+.author {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 12px;
+    margin-bottom: 12px;
+    height: 40px;
+    width: 146px;
+    background-color: #EBEBEB;
+    border-radius: 30px;
+    line-height: 40px;
+    padding-left: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 12px;
+    transform: translateY(70px);
+    opacity: 0;
+    transition: transform 0.3s, opacity 1s;
+}
+
+.fa-rotate-by {
+    transform: rotate(45deg);
+}
+
+.arrow {
+    margin-right: 5px;
+}
+
+.share {
+    position: absolute;
+    bottom: 0;
+    margin-left: 12px;
+    margin-bottom: 12px;
+    height: 40px;
+    background-color: #EBEBEB;
+    border-radius: 50%;
+    width: 40px;
+    left: 187px;
+    line-height: 40px;
+    text-align: center;
+    transform: translateY(70px);
+    opacity: 0;
+    transition: transform 0.3s, opacity 1s;
+}
+
+.more {
+    position: absolute;
+    bottom: 0;
+    margin-left: 12px;
+    margin-bottom: 12px;
+    height: 40px;
+    background-color: #EBEBEB;
+    border-radius: 50%;
+    width: 40px;
+    left: 237px;
+    line-height: 40px;
+    text-align: center;
+    transform: translateY(70px);
+    opacity: 0;
+    transition: transform 0.3s, opacity 1s;
+}
+
+.pinterest-card:hover .author {
+    transform: translateY(0px);
+    opacity: 100;
+}
+
+.pinterest-card:hover .share {
+    transform: translateY(0px);
+    opacity: 100;
+}
+
+.pinterest-card:hover .more {
+    transform: translateY(0px);
+    opacity: 100;
+}
+
+.pinterest-card:hover .save-button {
+    transform: translateY(0px);
+    opacity: 100;
+}
+
+.pinterest-card:hover {
+    transition-duration: 0.5s;
+    box-shadow: 0 10px 40px -4px rgb(0 0 0 / 55%);
+}
+
+.pinterest-card:hover .image{
+    transform: scale(1.1);
+}
